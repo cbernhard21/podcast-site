@@ -1,0 +1,19 @@
+:root {
+    --main-text-color: #C0D8D2;
+    --main-bg-color: #2C313A;
+    --black: #050C0F;
+    --yellow-accent: #EBBF47;
+    --maroon: #570300;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: var(--black);
+    font-size: 10px;
+    color: var(--main-text-color);
+}
