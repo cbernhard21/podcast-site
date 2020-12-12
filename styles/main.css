@@ -48,7 +48,7 @@ ul {
 }
 
 .hero-title h1 {
-    font-size: clamp(1.5rem, 0.5000rem + 4.6667vw, 4rem);
+    font-size: clamp(1.5rem, 0.5000rem + 3.6667vw, 4rem);
     /*   font-family: 'Permanent Marker', cursive; */
     font-family: 'Rock Salt', cursive;
     position: relative;
@@ -82,7 +82,7 @@ ul {
     left: 0;
     bottom: 20%;
     width: 30%;
-    height: clamp(0.5rem, -0.6250rem + 4.0000vw, 2rem);
+    height: clamp(0.5rem, -0.6250rem + 4.0000vw, 1.4rem);
     background-color: var(--yellow-accent);
     opacity: .7;
     z-index: -1;
@@ -97,11 +97,6 @@ ul {
     font-size: clamp(1rem, 0.5000rem + 4.6667vw, 2.5rem);
 }
 
-form {
-    border: 1px solid red;
-    display: flex;
-}
-
 input[type=text] {
     padding: .5rem;
     width: 100%;
@@ -109,6 +104,7 @@ input[type=text] {
     border-radius: 5px;
     border: none;
     font-size: 1.2rem;
+    margin-right: .5rem;
 }
 
 input[type=submit] {
@@ -157,5 +153,16 @@ i {
     }
     .hero-text {
         width: 75%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    input[type=text] {
+        max-width: 100%;
+        margin-bottom: .5rem;
     }
 }
